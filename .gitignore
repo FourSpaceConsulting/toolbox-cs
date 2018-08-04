@@ -1,5 +1,4 @@
-Toolbox/bin
-Toolbox/obj
-Toolbox.Test/bin
-Toolbox.Test/obj
-
+*/bin/Debug/
+*/bin/Release/
+*/obj/Debug/
+*/obj/Release/
