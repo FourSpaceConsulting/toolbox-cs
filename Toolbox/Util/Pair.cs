@@ -25,7 +25,7 @@ using System.Collections.Generic;
 
 namespace Fourspace.Toolbox.Util
 {
-    public class Pair<T,U>
+    public class Pair<T, U> : IPair<T, U>
     {
         public T First { get; }
         public U Second { get; }
@@ -42,7 +42,7 @@ namespace Fourspace.Toolbox.Util
             if (obj == null) return false;
             if (object.ReferenceEquals(obj, this)) return true;
             if (GetType() != obj.GetType()) return false;
-            var other = (Pair<T,U>)obj;
+            var other = (Pair<T, U>)obj;
             return IsEqual(other);
         }
 
